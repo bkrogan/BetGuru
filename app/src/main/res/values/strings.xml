@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BetGuru</string>
+    <string name="title_activity_login"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bottam">bottam</string>
+    <string name="title_live_bets">Live Bets</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_history">History</string>
+    <string name="title_about_us">About Us</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_home__bottom">Home_Bottom</string>
+</resources>

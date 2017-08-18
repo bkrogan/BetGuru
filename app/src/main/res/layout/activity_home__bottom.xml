@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aakoorathh.betguru.Home_Bottom">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="always"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_BettingRate1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="10:00"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_CountryName1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="India"
+                        android:textSize="15sp"
+                        />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_CountryFlag1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:src="@drawable/indian_flag"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_CountryFlag2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:src="@drawable/australia"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_BettingRate2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="10:00"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_CountryName2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="India"
+                        android:textSize="15sp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scrollIndicators="start"
+        android:scrollbarSize="10dp"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="always"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:textAlignment="viewStart"
+        android:pointerIcon="context_menu"
+        android:backgroundTint="?android:attr/windowBackground"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:itemIconTint="@color/colorAccent"
+        app:menu="@menu/navigation"
+        tools:ignore="RtlCompat"/>
+
+</LinearLayout>

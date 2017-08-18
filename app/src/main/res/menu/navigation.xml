@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_live_bets"
+        android:icon="@drawable/live_bets"
+        android:title="@string/title_live_bets"
+        app:showAsAction="withText|collapseActionView"/>
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/wallet"
+        android:title="@string/title_wallet"
+        app:showAsAction="withText|collapseActionView"
+        />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/history"
+        android:title="@string/title_history"
+        app:showAsAction="withText|collapseActionView"/>
+
+    <item
+        android:id="@+id/navigation_about_us"
+        android:icon="@drawable/abt_us"
+        android:title="@string/title_about_us"
+        app:showAsAction="withText|collapseActionView"/>
+
+</menu>
